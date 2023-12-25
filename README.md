@@ -20,6 +20,7 @@ The TD agent uses the following temporal difference formulation:
 \]
 
 where
+
 \[
 \tilde{z}_t = \gamma \tilde{z}_{t-1} + \nabla V_{\tilde{w}}(\tilde{s}_t, \tilde{w}_t)
 \]
