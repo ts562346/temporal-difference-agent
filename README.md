@@ -25,10 +25,9 @@ where
 \tilde{z}_t = \gamma \tilde{z}_{t-1} + \nabla V_{\tilde{w}}(\tilde{s}_t, \tilde{w}_t)
 \]
 
-- \(V(\cdot, \cdot)\) is the predicted value of being in a state given the neural model.
-- \(\tilde{z}_t\) is the eligibility trace, initialized at \(\tilde{z}_{-1} = 0\).
-- \(\alpha\) is the learning rate, and \(\gamma\) is the discount factor.
+\(V(\cdot, \cdot)\) is the predicted value of being in a state given the neural model. \(\tilde{z}_t\) is the eligibility trace, initialized at \(\tilde{z}_{-1} = 0\). \(\alpha\) is the learning rate, and \(\gamma\) is the discount factor.
 
+Make sure to use double dollar signs (\$\$) for display mode, which centers the equations. If you are still experiencing issues, double-check the syntax or provide more details about the problem.
 
 
 
