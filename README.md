@@ -15,15 +15,20 @@ This project involves implementing a Temporal Difference (TD) learning agent for
 
 The TD agent uses the following temporal difference formulation:
 
-![Equation 1](link_to_image1)
+$$
+\tilde{w}_{t+1} = \tilde{w}_t + \alpha \left(V(\tilde{s}_{t+1}, \tilde{w}_t) - V(\tilde{s}_t, \tilde{w}_t)\right) \tilde{z}_t
+$$
 
 where
 
-![Equation 2](link_to_image2)
+$$
+\tilde{z}_t = \gamma \tilde{z}_{t-1} + \nabla V_{\tilde{w}}(\tilde{s}_t, \tilde{w}_t)
+$$
 
 - \(V(\cdot, \cdot)\) is the predicted value of being in a state given the neural model.
 - \(\tilde{z}_t\) is the eligibility trace, initialized at \(\tilde{z}_{-1} = 0\).
 - \(\alpha\) is the learning rate, and \(\gamma\) is the discount factor.
+
 
 
 ## Implementation
